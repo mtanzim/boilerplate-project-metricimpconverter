@@ -18,25 +18,25 @@ suite('Unit Tests', function () {
 
     test('Whole number input', function (done) {
       var input = '32L';
-      assert.equal(convertHandler.getNum(input), (32).toFixed(5));
+      assert.equal(convertHandler.getNum(input), (32));
       done();
     });
 
     test('Decimal Input', function (done) {
       var input = '32.343L';
-      assert.equal(convertHandler.getNum(input), (32.343).toFixed(5));
+      assert.equal(convertHandler.getNum(input), (32.343));
       done();
     });
 
     test('Fractional Input', function (done) {
       var input = '32/45L';
-      assert.equal(convertHandler.getNum(input), Number(32 / 45).toFixed(5));
+      assert.equal(convertHandler.getNum(input), Number(32 / 45));
       done();
     });
 
     test('Fractional Input w/ Decimal', function (done) {
       var input = '3.2/45L';
-      assert.equal(convertHandler.getNum(input), Number(3.2 / 45).toFixed(5));
+      assert.equal(convertHandler.getNum(input), Number(3.2 / 45));
       done();
     });
 
@@ -50,7 +50,7 @@ suite('Unit Tests', function () {
     test('No Numerical Input', function (done) {
       var input = 'L';
       // console.log(convertHandler.getNum(input));
-      assert.equal(convertHandler.getNum(input), (1).toFixed(5));
+      assert.equal(convertHandler.getNum(input), (1));
       done();
     });
 

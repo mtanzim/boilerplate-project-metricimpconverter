@@ -102,6 +102,8 @@ function ConvertHandler() {
 
   this.spellOutUnit = function (unit) {
 
+    // console.log(unit);
+
     var unitDict = {
       'gal': 'gallons',
       'mi': 'miles',
@@ -151,9 +153,10 @@ function ConvertHandler() {
   };
 
   this.getString = function (initNum, initUnit, returnNum, returnUnit) {
-    var result;
-
-    return result;
+    // console.log(initUnit);
+    var string = `${initNum} ${this.spellOutUnit(initUnit)} converts to ${returnNum} ${this.spellOutUnit(returnUnit)}`;
+    // console.log(string); 
+    return string;
   };
 
 }

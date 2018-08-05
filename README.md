@@ -8,3 +8,5 @@
 ## Notes/Lessons
 
 - See multiple instantiations of [convertHandler.js](./controllers/convertHandler.js) in test and routes
+- Use of chai approximately assertion
+- Various ways of dealing with calculations, rounding etc in the [controller](./controllers/convertHandler.js)

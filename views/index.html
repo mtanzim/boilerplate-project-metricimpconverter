@@ -67,7 +67,11 @@
             success: function(data) {
               $('#result').text(data.string || data);
               $('#jsonResult').text(JSON.stringify(data));
-            }
+            },
+            error: function (result, status, xhr) {
+              $('#result').text(result.responseText);
+              $('#jsonResult').text("");
+            },
           });
         });
       });
